@@ -1,9 +1,9 @@
 # food_recipes_app
-- The food recipes application retrieves a wide variety of food names and instructional videos from the (TheMealDB API)[https://www.themealdb.com/api.php]. These recipes are organized by country, with each dish representing a specific nation.
+- The food recipes application retrieves a wide variety of food names and instructional videos from the [TheMealDB API](https://www.themealdb.com/api.php). These recipes are organized by country, with each dish representing a specific nation.
 - I used Flutter framework for building the user interface and Dart programming language .
 #  Used Packages
-- (Dio package)[https://github.com/cfug/dio/tree/main/dio]
-- (URL launcher)[https://github.com/flutter/packages/tree/main/packages/url_launcher/url_launcher]
+- [Dio package](https://github.com/cfug/dio/tree/main/dio)
+- [URL launcher](https://github.com/flutter/packages/tree/main/packages/url_launcher/url_launcher)
 # Installation
 1. Clone the repository
 ```
