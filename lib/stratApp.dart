@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intro_slider/intro_slider.dart';
 import 'Screens/intoSlider/IntroSlider.dart';
 
 class Stratapp extends StatelessWidget {
@@ -7,7 +6,7 @@ class Stratapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: IntroScreen(),
     );

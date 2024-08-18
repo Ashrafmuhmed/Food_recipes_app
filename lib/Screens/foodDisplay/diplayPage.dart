@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipes_app/Models/Country.dart';
-import 'package:food_recipes_app/Models/Meal.dart';
 import 'package:food_recipes_app/Screens/foodDisplay/displayMeals.dart';
 
 class Diplaypage extends StatelessWidget {
@@ -11,11 +10,11 @@ class Diplaypage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 186, 223, 138),
+        backgroundColor: const Color.fromARGB(255, 186, 223, 138),
         centerTitle: true,
         title: Text(
           country.name,
-          style: TextStyle(
+          style: const TextStyle(
               fontSize: 28,
               color: Colors.black,
               fontWeight: FontWeight.w300,

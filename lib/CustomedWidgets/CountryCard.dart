@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipes_app/Models/Country.dart';
-import 'package:food_recipes_app/Screens/foodDisplay/displayMeals.dart';
 
 import '../Screens/foodDisplay/diplayPage.dart';
 
@@ -10,12 +9,10 @@ class CountryCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return country == null
-        ? Container()
-        : GestureDetector(
+    return  GestureDetector(
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (BuildContext) {
+                  MaterialPageRoute(builder: (context) {
                 return Diplaypage(country: country);
               }
               )
@@ -26,20 +23,20 @@ class CountryCard extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage(country!.image), fit: BoxFit.fill)),
+                        image: AssetImage(country.image), fit: BoxFit.fill)),
                 width: 173,
                 height: 110,
                 child: Container(
                   color: const Color.fromARGB(68, 0, 0, 0),
+                  alignment: Alignment.center,
                   child: Text(
-                    country!.name,
-                    style: TextStyle(
+                    country.name,
+                    style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                         color: Colors.white,
                         fontFamily: 'Lalezar'),
                   ),
-                  alignment: Alignment.center,
                 ),
               ),
             ),

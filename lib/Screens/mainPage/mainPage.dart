@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:food_recipes_app/Services/MealsFetchService.dart';
 import 'mainRow.dart';
 
 class Mainpage extends StatelessWidget {
